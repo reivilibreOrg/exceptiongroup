@@ -4,7 +4,7 @@ import os
 import sys
 
 from ._catch import catch
-from ._version import version as __version__  # noqa: F401
+__version__ = "patched out"  # noqa: F401
 
 if sys.version_info < (3, 11):
     from ._exceptions import BaseExceptionGroup, ExceptionGroup
